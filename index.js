@@ -52,11 +52,11 @@ module.exports = new Package('dgeni-markdown', [
   computePathsProcessor.pathTemplates.push({
     docTypes: ['module' ],
     pathTemplate: '${area}/${name}',
-    outputPathTemplate: '${module}/index.md'
+    outputPathTemplate: '${module}/README.md'
   });
   computePathsProcessor.pathTemplates.push({
     docTypes: ['componentGroup' ],
     pathTemplate: '${area}/${moduleName}/${groupType}',
-    outputPathTemplate: '${moduleName}/${groupType}/index.md'
+    outputPathTemplate: '${moduleName}/${groupType}/README.md'
   });
 });
